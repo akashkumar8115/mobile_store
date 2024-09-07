@@ -82,7 +82,8 @@ const Navbar = () => {
                 <Link to="/support">Support</Link>
               </li>
               <li>
-                <i className="gg-search"></i>
+              <Link to="/mobile"> <i className="gg-search"></i></Link>
+               
               </li>
               <li>
                 <Link to="/addcart">

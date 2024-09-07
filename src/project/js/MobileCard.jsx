@@ -55,7 +55,7 @@ const MobileCard = ({ mobile }) => {
           <p className="mobile-price">{mobile.price}</p>
           <div className="mobile-buttons">
             <button className="btn buy-btn" onClick={handleBuyClick}>
-              Buy
+              Buy Now
             </button>
             <button className="btn download-btn" onClick={downloadPDF}>
               Go to

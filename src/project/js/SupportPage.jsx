@@ -1,7 +1,21 @@
-import React from 'react';
-import '../css/SupportPage.css';
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate for v6
+import { useAuth } from "../context/AuthProvider";
+import "../css/SupportPage.css";
 
 const SupportPage = () => {
+  const { authUser } = useAuth();
+  const navigate = useNavigate();
+
+  const handleBuyClick = () => {
+    if (authUser) {
+      // If authenticated, navigate to profile
+      navigate("/profile");
+    } else {
+      // If not authenticated, navigate to signup
+      navigate("/signup");
+    }
+  };
   return (
     <div className="support-container">
       <header className="support-header">
@@ -40,7 +54,9 @@ const SupportPage = () => {
           />
           <h2>Account Settings</h2>
           <p>Manage your account settings and preferences easily.</p>
-          <button className="explore-btn">Manage Account</button>
+          <button className="explore-btn" onClick={handleBuyClick}>
+            Manage Account
+          </button>
         </div>
 
         <div className="support-card animate-fade">
@@ -50,7 +66,9 @@ const SupportPage = () => {
             className="support-image"
           />
           <h2>Tutorials</h2>
-          <p>Watch our tutorials to learn how to use the product efficiently.</p>
+          <p>
+            Watch our tutorials to learn how to use the product efficiently.
+          </p>
           <button className="explore-btn">Watch Now</button>
         </div>
       </section>

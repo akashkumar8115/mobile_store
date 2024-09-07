@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  box-shadow: 0 0 0 0.1rem rgba(169, 169, 169, 0.2);
+  box-shadow: 2px 2px 0.1rem rgba(169, 169, 169, 0.2);
   /* position: fixed; */
   z-index: 9;
   margin-top: 0px !important;
@@ -77,7 +77,9 @@ header:hover {
   margin: auto;
   font-weight: bold;
   border-bottom: 2px solid transparent;
+  margin: 0.2rem;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -96,8 +98,13 @@ a {
 .nav_right ol li:hover:nth-child(2),
 .nav_right ol li:hover:nth-child(3) {
   transition: linear 0.3s ease-in-out;
+  border-radius: 8px;
+  background-color: rgb(255, 109, 109);
   border-bottom: 2px solid rgb(255, 109, 109);
   /* color: rgb(255, 109, 109); */
+}
+.nav_left ol li:active {
+  border-bottom: 2px solid rgb(255, 109, 109);
 }
 /* search button */
 .gg-search {
@@ -141,7 +148,7 @@ a {
   .nav_right,
   .nav_left {
     position: absolute;
-    height: 16.5rem;
+    height: 18rem;
     z-index: 999;
     display: block;
     /* display: none; */
@@ -151,11 +158,14 @@ a {
   .nav_left {
     margin-left: 0px;
     width: 50vw;
+    display: none;
+
   }
 
   .nav_right {
     margin-left: 50vw;
     width: 50vw;
+    display: none;
   }
 
   .nav_right ol,
@@ -171,7 +181,7 @@ a {
   #sidebar {
     display: block;
     margin: auto;
-    margin-left: 80vw;
+    margin-left: 75vw;
     margin-right: 0px;
     height: 40px;
     width: 40px;
@@ -201,8 +211,9 @@ a {
   /* cross css */
   .close {
     position: absolute;
-    right: 32px;
-    /* top: 32px; */
+    right: 12px;
+    justify-content: start;
+    top: 2px;
     width: 32px;
     height: 32px;
     opacity: 999;
