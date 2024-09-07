@@ -1,0 +1,94 @@
+.footerm {
+  height: max-content;
+  width: 100vw;
+  background-color: rgb(33, 33, 33);
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerm .ff,
+.footerm .fs,
+.footerm .ft,
+.footerm .fft {
+  color: rgb(205, 202, 202);
+  /* margin-left: 5rem; */
+  margin: auto;
+  margin-top: 0px;
+}
+
+.footerm .ff ol,
+.footerm .fs ol,
+.footerm .ft ol,
+.footerm .fft ol {
+  list-style: none;
+}
+
+.footerm .ff ol li,
+.footerm .fs ol li,
+.footerm .ft ol li,
+.footerm .fft ol li {
+  /* padding-left: 0.3rem; */
+  padding-right: 0.3rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(33, 33, 33);
+}
+
+.footerm .ff ol li:hover,
+.footerm .fs ol li:hover,
+.footerm .ft ol li:hover,
+.footerm .fft ol li:hover {
+  color: white;
+  text-transform: bold;
+  font-weight: bold;
+  padding-left: -0.5rem;
+  border-bottom: 1px solid white;
+  transition: 0.2s ease;
+}
+.footerm .ff ol li:nth-child(1):hover,
+.footerm .fs ol li:nth-child(1):hover,
+.footerm .ft ol li:nth-child(1):hover,
+.footerm .fft ol li:nth-child(1):hover {
+  cursor: text;
+  text-transform: none;
+  font-weight: none;
+  padding-left: 0;
+  border-bottom: 1px solid rgb(33, 33, 33);
+}
+.fsix {
+  display: block;
+  color: white;
+  background-color: rgb(33, 33, 33);
+  height: 4rem;
+  text-align: center;
+  height: auto;
+}
+.fsix a:hover {
+  color: rgb(240, 240, 240, 0.5);
+}
+.fsix hr {
+  width: 80vw;
+  margin: auto;
+}
+
+.fsix a {
+  color: rgb(33, 33, 33);
+}
+
+@media screen and (max-width: 800px) {
+  .footerm .ff,
+  .footerm .fs,
+  .footerm .ft,
+  .footerm .fft {
+    /* display: none; */
+  }
+  .footerm {
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footerm .fs {
+    margin-bottom: 0px;
+  }
+}

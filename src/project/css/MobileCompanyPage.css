@@ -1,0 +1,250 @@
+/* Base styles */
+.mobile-company-container {
+  width: 100%;
+  margin-top: 1rem;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.company-header {
+  background: linear-gradient(to right, #4caf50, #81c784);
+  padding: 40px 0;
+  color: white;
+}
+
+.animate-header {
+  font-size: 3em;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.tagline {
+  font-size: 1.5em;
+  margin-top: 10px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.promo-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.promo-banner {
+  padding: 20px;
+  background-color: #ffeb3b;
+  border-radius: 10px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.shop-now-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #388e3c;
+}
+
+.product-section {
+  margin-top: 40px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  max-width: 300px;
+  padding: 20px;
+  margin: 10px;
+  text-align: left;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.details-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #388e3c;
+}
+
+.customer-review-section {
+  margin-top: 50px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.review {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.review:hover {
+  transform: scale(1.05);
+}
+
+.company-footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #4caf50;
+  color: white;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Styles */
+
+/* For tablets and larger smartphones */
+@media (max-width: 768px) {
+  .animate-fade {
+    margin: auto;
+    margin-bottom: 1.5rem;
+    animation: scrollbar linear;
+    animation-range: entry 0 cover;
+    animation-timeline: view();
+  }
+  @keyframes scrollbar {
+    0% {
+      opacity: 0.2;
+      scale: 0.6;
+    }
+    40% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  .company-header {
+    height: auto;
+    padding: 10px;
+  }
+
+  .animate-header {
+    font-size: 1.5em;
+  }
+
+  .tagline {
+    font-size: 1.2em;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    /* max-width: 90%; */
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+
+  .review {
+    max-width: 90%;
+    margin: 10px 0;
+  }
+
+  .animate-slide {
+    margin-bottom: 1.5rem;
+    animation: scrollbar linear;
+    animation-range: entry 0 cover;
+    animation-timeline: view();
+    box-shadow: 8px 8px 26px rgba(148, 148, 148, 0.5);
+  }
+  @keyframes scrollbar {
+    0% {
+      opacity: 0.2;
+      scale: 0.6;
+    }
+    40% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
+
+/* For smaller smartphones */
+@media (max-width: 480px) {
+  .animate-header {
+    font-size: 2em;
+  }
+
+  .tagline {
+    font-size: 1em;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .details-btn,
+  .shop-now-btn {
+    padding: 8px 15px;
+  }
+
+  .customer-review-section {
+    padding: 20px;
+  }
+
+  .review {
+    padding: 10px;
+  }
+}

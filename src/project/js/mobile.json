@@ -1,0 +1,916 @@
+{
+    "mobilePhones": [
+        {
+            "id": "1",
+            "brand": "Apple",
+            "model": "iPhone 14",
+            "specifications": {
+                "screenSize": "6.1 inches",
+                "processor": "A15 Bionic",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "12 MP + 12 MP",
+                "battery": "3279 mAh"
+            },
+            "price": "$799",
+            "releaseDate": "2022-09-16",
+            "image": "https://a.media-amazon.com/images/I/71657TiFeHL._AC_UY218_.jpg"
+        },
+        {
+            "id": "2",
+            "brand": "Samsung",
+            "model": "Galaxy S22",
+            "specifications": {
+                "screenSize": "6.1 inches",
+                "processor": "Exynos 2200",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "50 MP + 12 MP + 10 MP",
+                "battery": "3700 mAh"
+            },
+            "price": "$799",
+            "releaseDate": "2022-02-25",
+            "image": "https://a.media-amazon.com/images/I/61zrlz6qlRL._AC_UY218_.jpg"
+        },
+        {
+            "id": "3",
+            "brand": "Google",
+            "model": "Pixel 6",
+            "specifications": {
+                "screenSize": "6.4 inches",
+                "processor": "Google Tensor",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "50 MP + 12 MP",
+                "battery": "4614 mAh"
+            },
+            "price": "$599",
+            "releaseDate": "2021-10-28",
+            "image": "https://a.media-amazon.com/images/I/41cgmxCmRBL._AC_UL320_.jpg"
+        },
+        {
+            "id": "4",
+            "brand": "OnePlus",
+            "model": "9 Pro",
+            "specifications": {
+                "screenSize": "6.7 inches",
+                "processor": "Snapdragon 888",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "48 MP + 50 MP + 8 MP + 2 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$969",
+            "releaseDate": "2021-03-23",
+            "image": "https://a.media-amazon.com/images/I/61LB+d0vheL._AC_UY218_.jpg"
+        },
+        {
+            "id": "5",
+            "brand": "Xiaomi",
+            "model": "Mi 11 Ultra",
+            "specifications": {
+                "screenSize": "6.81 inches",
+                "processor": "Snapdragon 888",
+                "ram": "12 GB",
+                "storage": "256 GB",
+                "camera": "50 MP + 48 MP + 48 MP",
+                "battery": "5000 mAh"
+            },
+            "price": "$749",
+            "releaseDate": "2021-04-23",
+            "image": "https://a.media-amazon.com/images/I/71x5XVC9UlL._AC_UL320_.jpg"
+        },
+        {
+            "id": "6",
+            "brand": "Sony",
+            "model": "Xperia 5 III",
+            "specifications": {
+                "screenSize": "6.1 inches",
+                "processor": "Snapdragon 888",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "12 MP + 12 MP + 12 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$999",
+            "releaseDate": "2021-08-13",
+            "image": "https://a.media-amazon.com/images/I/619VJYWIbXL._AC_UL320_.jpg"
+        },
+        {
+            "id": "7",
+            "brand": "Oppo",
+            "model": "Find X3 Pro",
+            "specifications": {
+                "screenSize": "6.7 inches",
+                "processor": "Snapdragon 888",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "50 MP + 13 MP + 13 MP + 3 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$1,149",
+            "releaseDate": "2021-03-30",
+            "image": "https://a.media-amazon.com/images/I/81Xl10tx7hL._AC_UY218_.jpg"
+        },
+        {
+            "id": "8",
+            "brand": "Nokia",
+            "model": "G50",
+            "specifications": {
+                "screenSize": "6.82 inches",
+                "processor": "Snapdragon 480",
+                "ram": "4 GB",
+                "storage": "64 GB",
+                "camera": "48 MP + 5 MP + 2 MP",
+                "battery": "5000 mAh"
+            },
+            "price": "$289",
+            "releaseDate": "2021-10-01",
+            "image": "https://a.media-amazon.com/images/I/71oIjjNm+nL._AC_UY218_.jpg"
+        },
+        {
+            "id": "9",
+            "brand": "Realme",
+            "model": "GT 2 Pro",
+            "specifications": {
+                "screenSize": "6.7 inches",
+                "processor": "Snapdragon 8 Gen 1",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "50 MP + 50 MP + 3 MP",
+                "battery": "5000 mAh"
+            },
+            "price": "$799",
+            "releaseDate": "2022-01-04",
+            "image": "https://a.media-amazon.com/images/I/71UIZHHo5hL._AC_UY218_.jpg"
+        },
+        {
+            "id": "10",
+            "brand": "Huawei",
+            "model": "P50 Pro",
+            "specifications": {
+                "screenSize": "6.6 inches",
+                "processor": "Kirin 9000",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "50 MP + 64 MP + 13 MP + 40 MP",
+                "battery": "4360 mAh"
+            },
+            "price": "$999",
+            "releaseDate": "2021-08-12",
+            "image": "https://a.media-amazon.com/images/I/617B9vlv+XL._AC_UY218_.jpg"
+        },
+        {
+            "id": "11",
+            "brand": "Vivo",
+            "model": "X70 Pro",
+            "specifications": {
+                "screenSize": "6.56 inches",
+                "processor": "Dimensity 1200",
+                "ram": "12 GB",
+                "storage": "256 GB",
+                "camera": "50 MP + 12 MP + 12 MP",
+                "battery": "4450 mAh"
+            },
+            "price": "$719",
+            "releaseDate": "2021-09-30",
+            "image": "https://a.media-amazon.com/images/I/61VxzkiD1EL._AC_UY218_.jpg"
+        },
+        {
+            "id": "12",
+            "brand": "Asus",
+            "model": "ROG Phone 5",
+            "specifications": {
+                "screenSize": "6.78 inches",
+                "processor": "Snapdragon 888",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "64 MP + 13 MP + 5 MP",
+                "battery": "6000 mAh"
+            },
+            "price": "$999",
+            "releaseDate": "2021-03-10",
+            "image": "https://a.media-amazon.com/images/I/817UIXcn3lL._AC_UL320_.jpg"
+        },
+        {
+            "id": "13",
+            "brand": "ZTE",
+            "model": "Axon 20 5G",
+            "specifications": {
+                "screenSize": "6.92 inches",
+                "processor": "Snapdragon 765G",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "64 MP + 8 MP + 2 MP + 2 MP",
+                "battery": "4220 mAh"
+            },
+            "price": "$449",
+            "releaseDate": "2020-09-01",
+            "image": "https://a.media-amazon.com/images/I/61spXlBT2IL._AC_UL320_.jpg"
+        },
+        {
+            "id": "14",
+            "brand": "LG",
+            "model": "Wing",
+            "specifications": {
+                "screenSize": "6.8 inches",
+                "processor": "Snapdragon 765G",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "64 MP + 12 MP + 13 MP",
+                "battery": "4000 mAh"
+            },
+            "price": "$999",
+            "releaseDate": "2020-10-05",
+            "image": "https://a.media-amazon.com/images/I/71vH4FaIHcL._AC_UY218_.jpg"
+        },
+        {
+            "id": "15",
+            "brand": "Microsoft",
+            "model": "Surface Duo 2",
+            "specifications": {
+                "screenSize": "8.3 inches",
+                "processor": "Snapdragon 888",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "12 MP + 12 MP + 16 MP",
+                "battery": "4449 mAh"
+            },
+            "price": "$1,499",
+            "releaseDate": "2021-09-21",
+            "image": "https://a.media-amazon.com/images/I/61LGDAZD+wL._AC_UL320_.jpg"
+        },
+        {
+            "id": "16",
+            "brand": "Honor",
+            "model": "50 Pro",
+            "specifications": {
+                "screenSize": "6.72 inches",
+                "processor": "Snapdragon 888",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "108 MP + 8 MP + 2 MP + 2 MP",
+                "battery": "4000 mAh"
+            },
+            "price": "$599",
+            "releaseDate": "2021-06-25",
+            "image": "https://a.media-amazon.com/images/I/71dGNC6hjHL._AC_UY218_.jpg"
+        },
+        {
+            "id": "17",
+            "brand": "Lenovo",
+            "model": "Legion Phone Duel 2",
+            "specifications": {
+                "screenSize": "6.92 inches",
+                "processor": "Snapdragon 888",
+                "ram": "12 GB",
+                "storage": "256 GB",
+                "camera": "64 MP + 16 MP",
+                "battery": "5500 mAh"
+            },
+            "price": "$799",
+            "releaseDate": "2021-04-08",
+            "image": "https://a.media-amazon.com/images/I/41aPcEQtbLL._AC_UY218_.jpg"
+        },
+        {
+            "id": "18",
+            "brand": "TCL",
+            "model": "10 Pro",
+            "specifications": {
+                "screenSize": "6.47 inches",
+                "processor": "Snapdragon 675",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "64 MP + 16 MP + 5 MP + 2 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$449",
+            "releaseDate": "2020-05-19",
+            "image": "https://a.media-amazon.com/images/I/51dqg5OOB3L._AC_UL320_.jpg"
+        },
+        {
+            "id": "19",
+            "brand": "Alcatel",
+            "model": "1S (2021)",
+            "specifications": {
+                "screenSize": "6.52 inches",
+                "processor": "Helio P22",
+                "ram": "3 GB",
+                "storage": "32 GB",
+                "camera": "13 MP + 2 MP + 2 MP",
+                "battery": "4000 mAh"
+            },
+            "price": "$129",
+            "releaseDate": "2021-01-05",
+            "image": "https://a.media-amazon.com/images/I/61q2ySpsFKL._AC_UL320_.jpg"
+        },
+        {
+            "id": "20",
+            "brand": "Infinix",
+            "model": "Zero X Pro",
+            "specifications": {
+                "screenSize": "6.67 inches",
+                "processor": "Dimensity 1200",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "108 MP + 8 MP + 8 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$349",
+            "releaseDate": "2021-10-15",
+            "image": "https://a.media-amazon.com/images/I/61C5ZFmVQnL._AC_UY218_.jpg"
+        },
+        {
+            "id": "21",
+            "brand": "Realme",
+            "model": "Narzo 50 Pro",
+            "specifications": {
+                "screenSize": "6.6 inches",
+                "processor": "Dimensity 920",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "48 MP + 8 MP + 2 MP",
+                "battery": "5000 mAh"
+            },
+            "price": "$289",
+            "releaseDate": "2022-05-18",
+            "image": "https://a.media-amazon.com/images/I/71k1NTr2TnL._AC_UY218_.jpg"
+        },
+        {
+            "id": "22",
+            "brand": "Nokia",
+            "model": "X20",
+            "specifications": {
+                "screenSize": "6.67 inches",
+                "processor": "Snapdragon 480",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "64 MP + 5 MP + 2 MP + 2 MP",
+                "battery": "4470 mAh"
+            },
+            "price": "$349",
+            "releaseDate": "2021-05-06",
+            "image": "https://a.media-amazon.com/images/I/61q2ySpsFKL._AC_UY218_.jpg"
+        },
+        {
+            "id": "23",
+            "brand": "Huawei",
+            "model": "Mate 40 Pro",
+            "specifications": {
+                "screenSize": "6.76 inches",
+                "processor": "Kirin 9000",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "50 MP + 12 MP + 20 MP",
+                "battery": "4400 mAh"
+            },
+            "price": "$1,199",
+            "releaseDate": "2020-10-30",
+            "image": "https://a.media-amazon.com/images/I/71dGNC6hjHL._AC_UY218_.jpg"
+        },
+        {
+            "id": "24",
+            "brand": "Google",
+            "model": "Pixel 5a",
+            "specifications": {
+                "screenSize": "6.34 inches",
+                "processor": "Snapdragon 765G",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "16 MP + 12.2 MP",
+                "battery": "4680 mAh"
+            },
+            "price": "$449",
+            "releaseDate": "2021-08-26",
+            "image": "https://a.media-amazon.com/images/I/5191gk2TRxL._AC_UL320_.jpg"
+        },
+        {
+            "id": "25",
+            "brand": "Xiaomi",
+            "model": "Redmi Note 11 Pro",
+            "specifications": {
+                "screenSize": "6.67 inches",
+                "processor": "Snapdragon 695",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "108 MP + 8 MP + 2 MP + 2 MP",
+                "battery": "5000 mAh"
+            },
+            "price": "$299",
+            "releaseDate": "2021-11-11",
+            "image": "https://a.media-amazon.com/images/I/81mDHujkYpL._AC_UL320_.jpg"
+        },
+        {
+            "id": "26",
+            "brand": "OnePlus",
+            "model": "Nord 2",
+            "specifications": {
+                "screenSize": "6.43 inches",
+                "processor": "Dimensity 1200",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "50 MP + 8 MP + 2 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$499",
+            "releaseDate": "2021-07-22",
+            "image": "https://a.media-amazon.com/images/I/613SAOPmLeL._AC_UY218_.jpg"
+        },
+        {
+            "id": "27",
+            "brand": "Sony",
+            "model": "Xperia 1 III",
+            "specifications": {
+                "screenSize": "6.5 inches",
+                "processor": "Snapdragon 888",
+                "ram": "12 GB",
+                "storage": "256 GB",
+                "camera": "12 MP + 12 MP + 12 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$1,199",
+            "releaseDate": "2021-08-19",
+            "image": "https://a.media-amazon.com/images/I/61BxKJrnbdL._AC_UL320_.jpg"
+        },
+        {
+            "id": "28",
+            "brand": "Oppo",
+            "model": "Reno 6 Pro",
+            "specifications": {
+                "screenSize": "6.55 inches",
+                "processor": "Dimensity 1200",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "64 MP + 13 MP + 8 MP + 2 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$699",
+            "releaseDate": "2021-06-05",
+            "image": "https://a.media-amazon.com/images/I/81Tx+kozw2L._AC_UY218_.jpg"
+        },
+        {
+            "id": "29",
+            "brand": "Nokia",
+            "model": "G10",
+            "specifications": {
+                "screenSize": "6.52 inches",
+                "processor": "Helio G25",
+                "ram": "3 GB",
+                "storage": "32 GB",
+                "camera": "13 MP + 2 MP + 2 MP",
+                "battery": "5050 mAh"
+            },
+            "price": "$199",
+            "releaseDate": "2021-04-27",
+            "image": "https://a.media-amazon.com/images/I/61srsxCAhwL._AC_UY218_.jpg"
+        },
+        {
+            "id": "30",
+            "brand": "Xiaomi",
+            "model": "Poco X3 Pro",
+            "specifications": {
+                "screenSize": "6.67 inches",
+                "processor": "Snapdragon 860",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "48 MP + 8 MP + 2 MP + 2 MP",
+                "battery": "5160 mAh"
+            },
+            "price": "$249",
+            "releaseDate": "2021-03-22",
+            "image": "https://a.media-amazon.com/images/I/71qe5DogAtL._AC_UL320_.jpg"
+        },
+        {
+            "id": "31",
+            "brand": "Realme",
+            "model": "8 Pro",
+            "specifications": {
+                "screenSize": "6.4 inches",
+                "processor": "Snapdragon 720G",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "108 MP + 8 MP + 2 MP + 2 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$319",
+            "releaseDate": "2021-03-24",
+            "image": "https://a.media-amazon.com/images/I/710qN4eow2L._AC_UY218_.jpg"
+        },
+        {
+            "id": "32",
+            "brand": "Huawei",
+            "model": "Nova 9",
+            "specifications": {
+                "screenSize": "6.57 inches",
+                "processor": "Snapdragon 778G",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "50 MP + 8 MP + 2 MP + 2 MP",
+                "battery": "4300 mAh"
+            },
+            "price": "$499",
+            "releaseDate": "2021-09-23",
+            "image": "https://a.media-amazon.com/images/I/71nro9DdXcL._AC_UY218_.jpg"
+        },
+        {
+            "id": "33",
+            "brand": "Infinix",
+            "model": "Hot 11S",
+            "specifications": {
+                "screenSize": "6.78 inches",
+                "processor": "Helio G88",
+                "ram": "4 GB",
+                "storage": "64 GB",
+                "camera": "50 MP + 2 MP + 2 MP",
+                "battery": "5000 mAh"
+            },
+            "price": "$169",
+            "releaseDate": "2021-09-16",
+            "image": "https://a.media-amazon.com/images/I/51cLkiAlt-L._AC_UY218_.jpg"
+        },
+        {
+            "id": "34",
+            "brand": "Vivo",
+            "model": "Y31s",
+            "specifications": {
+                "screenSize": "6.58 inches",
+                "processor": "Dimensity 700",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "48 MP + 2 MP",
+                "battery": "5000 mAh"
+            },
+            "price": "$229",
+            "releaseDate": "2021-01-11",
+            "image": "https://a.media-amazon.com/images/I/61slrN5n-FL._AC_UY218_.jpg"
+        },
+        {
+            "id": "35",
+            "brand": "Xiaomi",
+            "model": "Mi 10T",
+            "specifications": {
+                "screenSize": "6.67 inches",
+                "processor": "Snapdragon 865",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "64 MP + 13 MP + 5 MP",
+                "battery": "5000 mAh"
+            },
+            "price": "$499",
+            "releaseDate": "2020-10-15",
+            "image": "https://a.media-amazon.com/images/I/71ceEkr+QQL._AC_UL320_.jpg"
+        },
+        {
+            "id": "36",
+            "brand": "Motorola",
+            "model": "Moto G Power (2021)",
+            "specifications": {
+                "screenSize": "6.6 inches",
+                "processor": "Snapdragon 662",
+                "ram": "3 GB",
+                "storage": "64 GB",
+                "camera": "48 MP + 2 MP + 2 MP",
+                "battery": "5000 mAh"
+            },
+            "price": "$249",
+            "releaseDate": "2021-01-14",
+            "image": "https://a.media-amazon.com/images/I/71XZP2Hm+5L._AC_UY218_.jpg"
+        },
+        {
+            "id": "37",
+            "brand": "Samsung",
+            "model": "Galaxy A52",
+            "specifications": {
+                "screenSize": "6.5 inches",
+                "processor": "Snapdragon 720G",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "64 MP + 12 MP + 5 MP + 5 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$499",
+            "releaseDate": "2021-03-11",
+            "image": "https://a.media-amazon.com/images/I/71zwWBcSUML._AC_UY218_.jpg"
+        },
+        {
+            "id": "38",
+            "brand": "Nokia",
+            "model": "7.2",
+            "specifications": {
+                "screenSize": "6.3 inches",
+                "processor": "Snapdragon 660",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "48 MP + 8 MP + 5 MP",
+                "battery": "3500 mAh"
+            },
+            "price": "$349",
+            "releaseDate": "2019-09-27",
+            "image": "https://a.media-amazon.com/images/I/61Gl4860bcL._AC_UY218_.jpg"
+        },
+        {
+            "id": "39",
+            "brand": "Oppo",
+            "model": "A94",
+            "specifications": {
+                "screenSize": "6.43 inches",
+                "processor": "Helio P95",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "48 MP + 8 MP + 2 MP + 2 MP",
+                "battery": "4310 mAh"
+            },
+            "price": "$299",
+            "releaseDate": "2021-03-30",
+            "image": "https://a.media-amazon.com/images/I/81CFCXH1tVL._AC_UY218_.jpg"
+        },
+        {
+            "id": "40",
+            "brand": "Google",
+            "model": "Pixel 6 Pro",
+            "specifications": {
+                "screenSize": "6.71 inches",
+                "processor": "Google Tensor",
+                "ram": "12 GB",
+                "storage": "128 GB",
+                "camera": "50 MP + 12 MP + 48 MP",
+                "battery": "5003 mAh"
+            },
+            "price": "$899",
+            "releaseDate": "2021-10-28",
+            "image": "https://a.media-amazon.com/images/I/41M1ntwh6ML._AC_UL320_.jpg"
+        },
+        {
+            "id": "41",
+            "brand": "Xiaomi",
+            "model": "Mi Mix 4",
+            "specifications": {
+                "screenSize": "6.67 inches",
+                "processor": "Snapdragon 888",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "108 MP + 13 MP + 8 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$749",
+            "releaseDate": "2021-09-16",
+            "image": "https://a.media-amazon.com/images/I/71x5XVC9UlL._AC_UL320_.jpg"
+        },
+        {
+            "id": "42",
+            "brand": "Samsung",
+            "model": "Galaxy Z Fold 3",
+            "specifications": {
+                "screenSize": "7.6 inches",
+                "processor": "Snapdragon 888",
+                "ram": "12 GB",
+                "storage": "256 GB",
+                "camera": "12 MP + 12 MP + 12 MP",
+                "battery": "4400 mAh"
+            },
+            "price": "$1,799",
+            "releaseDate": "2021-08-27",
+            "image": "https://a.media-amazon.com/images/I/913EiorAS0L._AC_UY218_.jpg"
+        },
+        {
+            "id": "43",
+            "brand": "Realme",
+            "model": "GT Master Edition",
+            "specifications": {
+                "screenSize": "6.43 inches",
+                "processor": "Snapdragon 778G",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "64 MP + 8 MP + 2 MP",
+                "battery": "4300 mAh"
+            },
+            "price": "$399",
+            "releaseDate": "2021-07-16",
+            "image": "https://a.media-amazon.com/images/I/81JjTw28j8L._AC_UY218_.jpg"
+        },
+        {
+            "id": "44",
+            "brand": "OnePlus",
+            "model": "9",
+            "specifications": {
+                "screenSize": "6.55 inches",
+                "processor": "Snapdragon 888",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "48 MP + 50 MP + 2 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$729",
+            "releaseDate": "2021-03-23",
+            "image": "https://a.media-amazon.com/images/I/616wnQmPQ-L._AC_UY218_.jpg"
+        },
+        {
+            "id": "45",
+            "brand": "Huawei",
+            "model": "P40 Pro",
+            "specifications": {
+                "screenSize": "6.58 inches",
+                "processor": "Kirin 990",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "50 MP + 40 MP + 12 MP",
+                "battery": "4200 mAh"
+            },
+            "price": "$949",
+            "releaseDate": "2020-03-26",
+            "image": "https://a.media-amazon.com/images/I/81ZFLjC0JJL._AC_UY218_.jpg"
+        },
+        {
+            "id": "46",
+            "brand": "Motorola",
+            "model": "Edge 20",
+            "specifications": {
+                "screenSize": "6.7 inches",
+                "processor": "Snapdragon 778G",
+                "ram": "8 GB",
+                "storage": "128 GB",
+                "camera": "108 MP + 16 MP + 8 MP",
+                "battery": "4000 mAh"
+            },
+            "price": "$499",
+            "releaseDate": "2021-08-04",
+            "image": "https://a.media-amazon.com/images/I/71m+dNHzoGL._AC_UY218_.jpg"
+        },
+        {
+            "id": "47",
+            "brand": "Oppo",
+            "model": "Find X3 Pro",
+            "specifications": {
+                "screenSize": "6.7 inches",
+                "processor": "Snapdragon 888",
+                "ram": "8 GB",
+                "storage": "256 GB",
+                "camera": "50 MP + 13 MP + 50 MP + 3 MP",
+                "battery": "4500 mAh"
+            },
+            "price": "$1,099",
+            "releaseDate": "2021-03-19",
+            "image": "https://a.media-amazon.com/images/I/91wPh6RMcdL._AC_UY218_.jpg"
+        },
+        {
+            "id": "48",
+            "brand": "Xiaomi",
+            "model": "11 Lite 5G",
+            "specifications": {
+                "screenSize": "6.55 inches",
+                "processor": "Snapdragon 780G",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "64 MP + 8 MP + 5 MP",
+                "battery": "4250 mAh"
+            },
+            "price": "$349",
+            "releaseDate": "2021-03-29",
+            "image": "https://a.media-amazon.com/images/I/71ceEkr+QQL._AC_UL320_.jpg"
+        },
+        {
+            "id": "49",
+            "brand": "Apple",
+            "model": "iPhone 12",
+            "specifications": {
+                "screenSize": "6.1 inches",
+                "processor": "A14 Bionic",
+                "ram": "4 GB",
+                "storage": "64 GB",
+                "camera": "12 MP + 12 MP",
+                "battery": "2815 mAh"
+            },
+            "price": "$799",
+            "releaseDate": "2020-10-23",
+            "image": "https://a.media-amazon.com/images/I/71657TiFeHL._AC_UY218_.jpg"
+        },
+        {
+            "id": "50",
+            "brand": "Apple",
+            "model": "iPhone 12 Pro",
+            "specifications": {
+                "screenSize": "6.1 inches",
+                "processor": "A14 Bionic",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "12 MP + 12 MP + 12 MP",
+                "battery": "2815 mAh"
+            },
+            "price": "$999",
+            "releaseDate": "2020-10-23",
+            "image": "https://a.media-amazon.com/images/I/71xb2xkN5qL._AC_UY218_.jpg"
+        },
+        {
+            "id": "51",
+            "brand": "Apple",
+            "model": "iPhone 12 Pro Max",
+            "specifications": {
+                "screenSize": "6.7 inches",
+                "processor": "A14 Bionic",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "12 MP + 12 MP + 12 MP",
+                "battery": "3687 mAh"
+            },
+            "price": "$1,099",
+            "releaseDate": "2020-11-13",
+            "image": "https://a.media-amazon.com/images/I/81dT7CUY6GL._AC_UY218_.jpg"
+        },
+        {
+            "id": "52",
+            "brand": "Apple",
+            "model": "iPhone 13",
+            "specifications": {
+                "screenSize": "6.1 inches",
+                "processor": "A15 Bionic",
+                "ram": "4 GB",
+                "storage": "128 GB",
+                "camera": "12 MP + 12 MP",
+                "battery": "3240 mAh"
+            },
+            "price": "$799",
+            "releaseDate": "2021-09-24",
+            "image": "https://a.media-amazon.com/images/I/61l9ppRIiqL._AC_UY218_.jpg"
+        },
+        {
+            "id": "53",
+            "brand": "Apple",
+            "model": "iPhone 13 Pro",
+            "specifications": {
+                "screenSize": "6.1 inches",
+                "processor": "A15 Bionic",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "12 MP + 12 MP + 12 MP",
+                "battery": "3095 mAh"
+            },
+            "price": "$999",
+            "releaseDate": "2021-09-24",
+            "image": "https://a.media-amazon.com/images/I/61-r9zOKBCL._AC_UY218_.jpg"
+        },
+        {
+            "id": "54",
+            "brand": "Apple",
+            "model": "iPhone 13 Pro Max",
+            "specifications": {
+                "screenSize": "6.7 inches",
+                "processor": "A15 Bionic",
+                "ram": "6 GB",
+                "storage": "128 GB",
+                "camera": "12 MP + 12 MP + 12 MP",
+                "battery": "4352 mAh"
+            },
+            "price": "$1,099",
+            "releaseDate": "2021-09-24",
+            "image": "https://a.media-amazon.com/images/I/61cwywLZR-L._AC_UY218_.jpg"
+        },
+        {
+            "id": "55",
+            "brand": "Apple",
+            "model": "iPhone SE (2020)",
+            "specifications": {
+                "screenSize": "4.7 inches",
+                "processor": "A13 Bionic",
+                "ram": "3 GB",
+                "storage": "64 GB",
+                "camera": "12 MP",
+                "battery": "1821 mAh"
+            },
+            "price": "$399",
+            "releaseDate": "2020-04-24",
+            "image": "https://a.media-amazon.com/images/I/61XO4bORHUL._AC_UY218_.jpg"
+        },
+        {
+            "id": "56",
+            "brand": "Apple",
+            "model": "iPhone 11",
+            "specifications": {
+                "screenSize": "6.1 inches",
+                "processor": "A13 Bionic",
+                "ram": "4 GB",
+                "storage": "64 GB",
+                "camera": "12 MP + 12 MP",
+                "battery": "3110 mAh"
+            },
+            "price": "$699",
+            "releaseDate": "2019-09-20",
+            "image": "https://a.media-amazon.com/images/I/61-r9zOKBCL._AC_UY218_.jpg"
+        },
+        {
+            "id": "57",
+            "brand": "Apple",
+            "model": "iPhone 11 Pro",
+            "specifications": {
+                "screenSize": "5.8 inches",
+                "processor": "A13 Bionic",
+                "ram": "4 GB",
+                "storage": "64 GB",
+                "camera": "12 MP + 12 MP + 12 MP",
+                "battery": "3046 mAh"
+            },
+            "price": "$999",
+            "releaseDate": "2019-09-20",
+            "image": "https://a.media-amazon.com/images/I/619f09kK7tL._AC_UY218_.jpg"
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  /* background-color: #f9f9f9; */
+}
+
+.contact-container h1,
+p {
+  color: #333;
+}
+
+.contact-container {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.contact-header{
+    justify-content: space-between;
+    text-align: center;
+}
+.contact-header h1 {
+  /* font-size: 2.5rem; */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #777;
+}
+
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff5722;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.submit-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #ff7043;
+}
+
+.success-message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #28a745;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-header p {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-header p {
+    font-size: 0.9rem;
+  }
+}

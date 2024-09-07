@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  height: 3rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  height: 42px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 0.1rem rgba(169, 169, 169, 0.2);
+  /* position: fixed; */
+  z-index: 9;
+  margin-top: 0px !important;
+}
+header:hover {
+  box-shadow: 0 0 0 0.2rem 1e212B, 0 0 0 0.1rem rgba(255, 255, 255, 1);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-left: 0.2rem;
+  align-items: center;
+  text-align: center;
+}
+.logo a {
+  border: none;
+  margin: auto;
+  text-decoration: none;
+}
+.logo a img {
+  margin: auto;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+}
+.nav_left,
+.nav_right {
+  margin: auto;
+  height: 42px;
+}
+.nav_left {
+  margin-left: 0.2rem;
+}
+.nav_right {
+  margin-left: 35rem;
+}
+.nav_left ol,
+.nav_right ol {
+  list-style: none;
+  display: flex;
+  height: 42px;
+}
+
+.nav_left ol li,
+.nav_right ol li {
+  cursor: pointer;
+
+  padding: 0.7rem;
+  margin: auto;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.nav_right ol li:nth-child(1),
+.nav_right ol li:nth-child(4),
+.nav_right ol li:nth-child(5),
+.nav_right ol li:nth-child(6) {
+  border-bottom: none;
+}
+.nav_right ol li:nth-child(1) {
+  display: none;
+}
+
+.nav_left ol li:hover,
+.nav_right ol li:hover:nth-child(2),
+.nav_right ol li:hover:nth-child(3) {
+  transition: linear 0.3s ease-in-out;
+  border-bottom: 2px solid rgb(255, 109, 109);
+  /* color: rgb(255, 109, 109); */
+}
+/* search button */
+.gg-search {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 100%;
+  margin-left: -4px;
+  margin-top: -4px;
+}
+.gg-search::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  height: 8px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 12px;
+}
+/* sidebar */
+#sidebar {
+  display: none;
+}
+
+/* resposible */
+@media screen and (max-width: 1290px) {
+  .nav_right {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav_right,
+  .nav_left {
+    position: absolute;
+    height: 16.5rem;
+    z-index: 999;
+    display: block;
+    /* display: none; */
+    background-color: #ffffff;
+    transition: 3s ease;
+  }
+  .nav_left {
+    margin-left: 0px;
+    width: 50vw;
+  }
+
+  .nav_right {
+    margin-left: 50vw;
+    width: 50vw;
+  }
+
+  .nav_right ol,
+  .nav_left ol {
+    display: block;
+    padding-left: 1rem;
+  }
+  .nav_right ol li:nth-child(1) {
+    display: block;
+  }
+  /* botton */
+
+  #sidebar {
+    display: block;
+    margin: auto;
+    margin-left: 80vw;
+    margin-right: 0px;
+    height: 40px;
+    width: 40px;
+  }
+
+  #sidebar button {
+    cursor: pointer;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    /* margin-right: 0px; */
+    border: none;
+    background-color: white;
+    /* border: 1px solid rgb(199, 35, 35); */
+  }
+
+  #sidebar button span {
+    margin: 0.1rem;
+    background-color: #000000;
+    border: 1px solid rgb(248, 248, 248);
+    height: 5px;
+    width: 25px;
+    border-radius: 35px;
+    display: block;
+  }
+
+  /* cross css */
+  .close {
+    position: absolute;
+    right: 32px;
+    /* top: 32px; */
+    width: 32px;
+    height: 32px;
+    opacity: 999;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before {
+    background-color: #0a0a0a;
+  }
+  .close:after {
+    background-color: #000000;
+  }
+  .close:before,
+  .close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 25px;
+    width: 2px;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  .nav_right ol li img {
+    height: 30px;
+    width: 30px;
+  }
+}

@@ -1,0 +1,124 @@
+/* TvSmartHomePage.css */
+.tv-smarthome-container {
+  /* padding: 20px; */
+  font-family: "Arial", sans-serif;
+}
+
+.tv-header {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: green;
+  justify-content: space-between;
+}
+
+.animate-header {
+  color: black;
+  margin: auto;
+  font-size: 1.5em;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.tagline {
+  margin: auto;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.tv-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tv-card {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tv-card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #0056b3;
+}
+
+.smart-home-features {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  width: 30%;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .tv-card,
+  .feature-item {
+    width: 100%;
+  }
+  .animate-header,
+  .tagline {
+    font-size: 1rem;
+    margin: auto;
+  }
+
+  .animate-fade {
+    margin-bottom: 1rem;
+    animation: scrollbar linear;
+    animation-range: entry 0 cover;
+    animation-timeline: view();
+  }
+  @keyframes scrollbar {
+    0% {
+      opacity: 0.2;
+      scale: 0.2;
+    }
+    40% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 1.5s ease-in;
+}

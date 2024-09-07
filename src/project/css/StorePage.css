@@ -1,0 +1,113 @@
+/* StorePage.css */
+
+.store-container {
+  height: 100%;
+  /* margin:auto; */
+  background-color: #f9f9f9;
+}
+
+.store-header {
+  margin: 0;
+  text-align: center;
+  padding: 40px;
+  background-color: #4caf50;
+  color: white;
+}
+
+.store-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.store-tagline {
+  font-size: 1.2rem;
+}
+
+.store-section {
+  margin: 40px 0;
+}
+
+.store-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 30%;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.buy-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buy-btn:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+.store-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .store-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .product-card {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    animation: scrollbar linear;
+    animation-range: entry 0 cover;
+    animation-timeline: view();
+  }
+  @keyframes scrollbar {
+    0% {
+      opacity: 0.2;
+      scale: 0.6;
+    }
+    40% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  .store-title {
+    font-size: 1.3rem;
+  }
+}

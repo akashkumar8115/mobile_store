@@ -1,0 +1,346 @@
+/* General Styles */
+.home_body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  /* color: #333; */
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("https://img.lovepik.com/background/20211022/large/lovepik-ground-background-of-urban-building-pavement-image_500745940.jpg")
+      no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  animation: fadeInUp 1s ease-out;
+}
+
+.shop-now-btn {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.shop-now-btn:hover {
+  background-color: #ff7043;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  gap: 40px;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff5722;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+.about-image{
+}
+.about-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Products Section */
+.featured-products-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.featured-products-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  aspect-ratio: 0.7;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.buy-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #ff7043;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Customer Reviews Section */
+.reviews-section {
+  background-color: #f0f0f0;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.review-card {
+  margin: auto;
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.review-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  padding: 80px 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.newsletter-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.newsletter-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-input input {
+  padding: 10px;
+  padding-left: 1rem;
+  outline: none;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  width: 300px;
+}
+.newsletter-input input :active {
+  border: 2px solid rgb(1, 165, 17);
+}
+
+.subscribe-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #ff7043;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+    color: black;
+  }
+  .hero-section {
+    display: block;
+    height: 60vh;
+  }
+  .hero-image img {
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .shop-now-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .product-grid {
+    flex-direction: column;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+ 
+  .reviews-grid {
+    margin: auto;
+    flex-direction: column;
+  }
+  .review-card {
+    margin: auto;
+    margin-bottom: 1rem;
+    animation: scrollbar linear;
+    animation-range: entry 0 cover;
+    animation-timeline: view();
+  }
+
+  @keyframes scrollbar {
+    0% {
+      opacity: 0.2;
+      scale: 0.2;
+    }
+    40% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
