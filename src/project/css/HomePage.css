@@ -328,12 +328,12 @@ button {
   .review-card {
     margin: auto;
     margin-bottom: 1rem;
-    animation: scrollbar linear;
-    animation-range: entry 0 cover;
+    animation: none;
+    animation-range: none;
     animation-timeline: view();
   }
 
-  @keyframes scrollbar {
+  /* @keyframes scrollbar {
     0% {
       opacity: 0.2;
       scale: 0.2;
@@ -342,5 +342,5 @@ button {
       opacity: 1;
       scale: 1;
     }
-  }
+  } */
 }
