@@ -12,7 +12,7 @@ const MobileCard = ({ mobile }) => {
 
   const handleBuyClick = () => {
     if (authUser) {
-      alert("Confirm! Are you buy this mobile ?");
+      // alert("Confirm! Are you buy this mobile ?");
       setShowModal(true);
       navigate("/payment"); // Redirect to payment page
     } else {
@@ -30,7 +30,7 @@ const MobileCard = ({ mobile }) => {
     setShowModal(false);
   };
 
-  const downloadPDF = (e) => {
+  const Goto = (e) => {
     e.preventDefault();
   };
 
@@ -43,21 +43,21 @@ const MobileCard = ({ mobile }) => {
         <div className="mobile-card-back">
           <h3 className="mobile-title">{mobile.brand}</h3>
           <p className="mobile-description">{mobile.model}</p>
-          
-            <div className="mobile_specification">
-              <p>ScreenSize:{mobile.specifications.screenSize}</p>
-              <p>Processor: {mobile.specifications.processor}</p>
-              <p>RAM: {mobile.specifications.ram}</p>
-              <p>Storage: {mobile.specifications.storage}</p>
-              <p>battery: {mobile.specifications.battery}</p>
-              <p>camera: {mobile.specifications.camera}</p>
-            </div>
+
+          <div className="mobile_specification">
+            <p>ScreenSize:{mobile.specifications.screenSize}</p>
+            <p>Processor: {mobile.specifications.processor}</p>
+            <p>RAM: {mobile.specifications.ram}</p>
+            <p>Storage: {mobile.specifications.storage}</p>
+            <p>battery: {mobile.specifications.battery}</p>
+            <p>camera: {mobile.specifications.camera}</p>
+          </div>
           <p className="mobile-price">{mobile.price}</p>
           <div className="mobile-buttons">
             <button className="btn buy-btn" onClick={handleBuyClick}>
               Buy Now
             </button>
-            <button className="btn download-btn" onClick={downloadPDF}>
+            <button className="btn download-btn" onClick={Goto}>
               Go to
             </button>
           </div>

@@ -15,7 +15,7 @@ const Popupn = ({ show, handleClose, children }) => {
               <input type="email" className="input" placeholder="Email" />
               <input type="password" className="input" placeholder="Password" />
               <p className="page-link">
-                <Link to="/register" target="_blank" className="aforgate">
+                <Link to="/signup" target="_blank" className="aforgate">
                   <span className="page-link-label">Forgot Password ?</span>
                 </Link>
               </p>
@@ -23,7 +23,7 @@ const Popupn = ({ show, handleClose, children }) => {
             </form>
             <p className="sign-up-label">
               Don't have an account ?
-              <Link to="/register" target="_blank" rel="noopener noreferrer">
+              <Link to="/signup" target="_blank" rel="noopener noreferrer">
                 <span className="sign-up-link"> Sign Up </span>
               </Link>
             </p>

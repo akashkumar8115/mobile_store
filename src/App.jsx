@@ -9,7 +9,6 @@ import Home from "./project/js/Home.jsx";
 import Login from "./project/js/Login.jsx";
 import Signup from "./project/js/Signup.jsx";
 import About from "./project/js/About.jsx";
-import Contact from "./project/js/Contact.jsx";
 import Mobile from "./project/js/Mobile.jsx";
 import Lifestyle from "./project/js/Lifestyle.jsx";
 import DiscoverPage from "./project/js/DiscoverPage.jsx";
@@ -18,6 +17,7 @@ import SupportPage from "./project/js/SupportPage.jsx";
 import TvSmartHomePage from "./project/js/TvSmartHomePage.jsx";
 import ProfilePage from "./project/js/ProfilePage.jsx";
 import ContactPage from "./project/js/ContactPage.jsx";
+import Goto from "./project/js/Goto.jsx";
 
 import Footer from "./project/js/Footer.jsx";
 function App() {
@@ -41,6 +41,7 @@ function App() {
         <Route path="/smart" element={<TvSmartHomePage />} />
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/goto" element={<Goto />} />
       </Routes>
       <Toaster />
       <Footer />

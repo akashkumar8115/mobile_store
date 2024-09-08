@@ -2,25 +2,34 @@ import React, { useState, useEffect } from "react";
 import "../css/Mobile.css";
 import Data from "./mobile.json";
 import MobileCard from "./MobileCard.jsx";
+
 function ContactPage() {
   const mobilesData = Data.mobilePhones;
+
   const [searchTerm, setSearchTerm] = useState("");
   const [mobiles, setMobiles] = useState([]);
   const [defaultmobiles, setDefaultmobiles] = useState([]);
-  // console.log(mobilesData);
+  const [minPrice, setMinPrice] = useState(""); // New state for minimum price
+  const [maxPrice, setMaxPrice] = useState(""); // New state for maximum price
 
-  const fetchmobiles = (query = "") => {
-    // Simulate a search by filtering the local JSON data
+  const fetchmobiles = (query = "", minPrice, maxPrice) => {
+    let filteredMobiles = mobilesData;
+
     if (query) {
-      setMobiles(
-        mobilesData.filter((mobile) => {
-
-          return mobile.brand.toLowerCase().includes(query.toLowerCase());
-        })
+      filteredMobiles = filteredMobiles.filter((mobile) =>
+        mobile.brand.toLowerCase().includes(query.toLowerCase())
       );
-    } else {
-      setMobiles([]);
     }
+
+    // Apply price range filter
+    if (minPrice && maxPrice) {
+      filteredMobiles = filteredMobiles.filter((mobile) => {
+        const price = parseFloat(mobile.price.replace("$", ""));
+        return price >= parseFloat(minPrice) && price <= parseFloat(maxPrice);
+      });
+    }
+
+    setMobiles(filteredMobiles);
   };
 
   useEffect(() => {
@@ -32,15 +41,21 @@ function ContactPage() {
   }, [mobilesData]);
 
   const handleSearch = () => {
-    fetchmobiles(searchTerm);
+    fetchmobiles(searchTerm, minPrice, maxPrice);
   };
-
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
     handleSearch();
   };
-  console.log(mobiles);
 
+  const handleMinPriceChange = (e) => {
+    setMinPrice(e.target.value);
+  };
+
+  const handleMaxPriceChange = (e) => {
+    setMaxPrice(e.target.value);
+  };
+  // 
   return (
     <div className="mobiles-container">
       <div className="search-container">
@@ -51,26 +66,38 @@ function ContactPage() {
           onChange={handleInputChange}
         />{" "}
         <br />
+        <input
+          type="number"
+          placeholder="Min Price"
+          value={minPrice}
+          onChange={handleMinPriceChange}
+        />
+        <input
+          type="number"
+          placeholder="Max Price"
+          value={maxPrice}
+          onChange={handleMaxPriceChange}
+        />
+        <br />
         <button onClick={handleSearch}>Search</button>
       </div>
 
       <div className="mobile-results">
         {mobiles.length === 0 && searchTerm === "" ? (
           <div>
-            {/* <h2>Default mobiles</h2> */}
             <div className="mobile-card-container">
               {defaultmobiles.length > 0 ? (
                 defaultmobiles.map((mobile) => (
-                  <mobileCard key={mobile.id} mobile={mobile} />
+                  <MobileCard key={mobile.id} mobile={mobile} />
                 ))
               ) : (
-                <p>No default mobiles available</p>
+                <p></p>
               )}
             </div>
           </div>
         ) : (
           <div>
-            <h2>{searchTerm ? "Search Results" : "Default mobiles"}</h2>
+            <h4>{searchTerm ? "Search Results" : "Default All mobiles"}</h4>
             <div className="mobile-card-container">
               {mobiles.length === 0 && searchTerm ? (
                 <p>No results found</p>
