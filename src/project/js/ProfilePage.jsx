@@ -1,17 +1,15 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import AuthContext from "../context/AuthProvider.jsx";
 import { useNavigate } from "react-router-dom";
-
 import "../css/ProfilePage.css"; // Add styles in this file
+
 const ProfilePage = () => {
   const navigate = useNavigate();
-
-  // const { auth, fetchUserData } = useContext(AuthContext);
-  // Sample user data (this could come from an API or local storage)
+  
+  // Sample user data
   const [userData, setUserData] = useState({
-    name: "Akash Kumar",
-    email: "akash@example.com",
+    name: "User Kumar",
+    email: "exaple@example.com",
     bio: "Full Stack Developer with a passion for creating innovative web applications. Love exploring new technologies and solving real-world problems.",
     location: "NIT Hamirpur",
     profilePic:
@@ -19,8 +17,7 @@ const ProfilePage = () => {
     hobbies: ["Chess", "Table Tennis", "Coding"],
   });
 
-  const userId = "USER_ID_HERE"; // Replace with actual user ID
-
+  const [userId, setUserId] = useState(null); // Initialize userId with null
   const [isEditing, setIsEditing] = useState(false);
   const [passwordData, setPasswordData] = useState({
     currentPassword: "",
@@ -31,15 +28,20 @@ const ProfilePage = () => {
 
   // Fetch user data
   useEffect(() => {
-    axios
-      .get(`http://localhost:5000/api/users/${userId}`)
-      .then((response) => {
-        setUserData(response.data);
-      })
-      .catch((error) => {
-        console.error("There was an error fetching user data!", error);
-      });
-  }, [userId]);
+    // Set userId from local storage or context if available
+    const fetchedUserId = "USER_ID_HERE"; // Replace with actual user ID retrieval method
+    if (fetchedUserId) {
+      setUserId(fetchedUserId);
+      axios
+        .get(`http://localhost:5000/api/users/${fetchedUserId}`)
+        .then((response) => {
+          setUserData(response.data);
+        })
+        .catch((error) => {
+          console.error("There was an error fetching user data!", error);
+        });
+    }
+  }, []);
 
   // Handle input changes
   const handleInputChange = (e) => {
@@ -61,15 +63,17 @@ const ProfilePage = () => {
 
   // Save updated user data
   const handleSave = () => {
-    axios
-      .put(`http://localhost:5000/api/users/${userId}`, userData)
-      .then((response) => {
-        setUserData(response.data);
-        setIsEditing(false);
-      })
-      .catch((error) => {
-        console.error("There was an error updating user data!", error);
-      });
+    if (userId) {
+      axios
+        .put(`http://localhost:5000/api/users/${userId}`, userData)
+        .then((response) => {
+          setUserData(response.data);
+          setIsEditing(false);
+        })
+        .catch((error) => {
+          console.error("There was an error updating user data!", error);
+        });
+    }
   };
 
   // Change password
@@ -79,23 +83,25 @@ const ProfilePage = () => {
       return;
     }
 
-    axios
-      .put(`http://localhost:5000/api/users/${userId}/password`, passwordData)
-      .then((response) => {
-        alert("Password updated successfully");
-        setPasswordData({
-          currentPassword: "",
-          newPassword: "",
-          confirmNewPassword: "",
+    if (userId) {
+      axios
+        .put(`http://localhost:5000/api/users/${userId}/password`, passwordData)
+        .then((response) => {
+          alert("Password updated successfully");
+          setPasswordData({
+            currentPassword: "",
+            newPassword: "",
+            confirmNewPassword: "",
+          });
+          setPasswordError("");
+        })
+        .catch((error) => {
+          setPasswordError(error.response.data.error);
         });
-        setPasswordError("");
-      })
-      .catch((error) => {
-        setPasswordError(error.response.data.error);
-      });
+    }
   };
 
-  // logout
+  // Logout
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {
@@ -109,6 +115,7 @@ const ProfilePage = () => {
       navigate("/");
     }
   };
+
   return (
     <div className="profile-container">
       <div className="profile-header">
@@ -234,11 +241,12 @@ const ProfilePage = () => {
           className="edit-input"
         />
         {passwordError && <p className="error-message">{passwordError}</p>}
-        <br />{" "}
+        <br />
         <button onClick={handleChangePassword} className="save-btn">
           Change Password
-        </button>{" "}
-        <br /> <br />
+        </button>
+        <br />
+        <br />
         <div>
           <input
             type="checkbox"

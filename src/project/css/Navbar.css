@@ -72,8 +72,7 @@ header:hover {
 .nav_left ol li,
 .nav_right ol li {
   cursor: pointer;
-
-  padding: 0.7rem;
+  padding: 0.5rem;
   margin: auto;
   font-weight: bold;
   border-bottom: 2px solid transparent;
@@ -117,7 +116,6 @@ a {
   border: 2px solid;
   border-radius: 100%;
   margin-left: -4px;
-  margin-top: -4px;
 }
 .gg-search::after {
   content: "";
