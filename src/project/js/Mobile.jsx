@@ -24,7 +24,7 @@ function ContactPage() {
     // Apply price range filter
     if (minPrice && maxPrice) {
       filteredMobiles = filteredMobiles.filter((mobile) => {
-        const price = parseFloat(mobile.price.replace("$", ""));
+        const price = parseFloat(mobile.price.replace("$", "").replace(",", ""));
         return price >= parseFloat(minPrice) && price <= parseFloat(maxPrice);
       });
     }
